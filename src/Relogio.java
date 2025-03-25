@@ -13,6 +13,9 @@ public class Relogio {
     }
 
     public void setHora(int hora) {
+        if(hora >= 24){
+            this.hora = 24;
+        }
         this.hora = hora;
     }
 
